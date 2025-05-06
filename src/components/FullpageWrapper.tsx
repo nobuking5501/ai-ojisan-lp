@@ -14,7 +14,7 @@ const FullpageWrapper: React.FC<FullpageWrapperProps> = ({
   sectionsColors = [] 
 }) => {
   // 無料版または開発中は空の文字列を使用
-  const licenseKey = '';
+  const licenseKey = process.env.NEXT_PUBLIC_FULLPAGE_KEY || '';
   
   // fullpageApiのリファレンスを保持
   const fullpageApiRef = useRef<any>(null);
