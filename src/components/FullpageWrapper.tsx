@@ -13,8 +13,8 @@ const FullpageWrapper: React.FC<FullpageWrapperProps> = ({
   anchors,
   sectionsColors = [] 
 }) => {
-  // ライセンスキー（必要に応じて）
-  const licenseKey = 'YOUR_KEY_HERE';
+  // 無料版または開発中は空の文字列を使用
+  const licenseKey = '';
   
   // fullpageApiのリファレンスを保持
   const fullpageApiRef = useRef<any>(null);
