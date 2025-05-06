@@ -1,0 +1,138 @@
+/* fullPage.js用のスタイル調整 */
+
+/* マウスホイールスクロールおよびタッチ操作の調整 */
+html, body {
+  -ms-touch-action: none;
+  touch-action: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* スクロールバーを非表示に */
+}
+
+/* Webkitベースのブラウザでスクロールを向上 */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* セクションの高さ設定 */
+.section {
+  height: 100vh !important;
+  overflow: hidden;
+  /* paddingTopで追加されるパディングと合わせる */
+  padding-top: 0 !important;
+  margin-top: 0 !important; /* セクション間の余白を削除 */
+}
+
+/* セクションコンテンツのコンテナ */
+.fp-overflow {
+  height: 100% !important; /* フル高さを使用 */
+  padding-top: 0; /* 上部の余白を削除 */
+  padding-bottom: 0; /* 下部の余白を削除 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden; /* スクロールバーを非表示に */
+}
+
+/* モバイル用の特殊処理 */
+@media (max-width: 768px) {
+  .section {
+    min-height: 100vh;
+    height: auto !important;
+  }
+  
+  .fp-overflow {
+    min-height: 100vh;
+    height: auto !important;
+    padding-top: 20px; /* ヘッダーとの間隔を確保 */
+    padding-bottom: 20px;
+  }
+}
+
+/* ナビゲーションドットのスタイル改善 */
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+  background: rgba(0, 114, 255, 0.8) !important;
+}
+
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span {
+  background: #0072ff !important;
+  transform: scale(1.5);
+}
+
+/* ナビゲーションドットの位置調整 */
+#fp-nav {
+  top: 55% !important; /* 若干下に移動して中央からずらす */
+}
+
+/* ナビゲーションツールチップのスタイル */
+.fp-tooltip {
+  color: #0072ff !important;
+  font-size: 14px !important;
+  font-family: 'Inter', sans-serif !important;
+  padding: 5px 10px !important;
+  background-color: white !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* このセレクタはすでに上部で定義したので削除 */
+
+/* コンテンツコンテナの調整 */
+.section .container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .section .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section .container {
+    max-width: 1280px;
+  }
+}
+
+/* フッターセクションの調整 */
+.section.footer-section {
+  padding: 0;
+}
+
+/* アプリセクション特有の調整 */
+[data-anchor="apps"] .fp-overflow {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+[data-anchor="apps"] .container {
+  max-width: 95%;
+}
+
+/* 資金セクション特有の調整 */
+[data-anchor="funding"] .fp-overflow {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+[data-anchor="funding"] .container {
+  max-width: 95%;
+}

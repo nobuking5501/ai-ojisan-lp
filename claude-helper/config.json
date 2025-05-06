@@ -1,0 +1,35 @@
+{
+  "project_name": "AI-ojisan-project",
+  "current_phase": "計画フェーズ",
+  "development_priorities": [
+    "Webサイト設計", 
+    "LPおよびブログ構築",
+    "SNSアプリ販売ページ作成",
+    "プラットフォーム統合",
+    "ユーザーフィードバック収集システム",
+    "アナリティクス導入"
+  ],
+  "default_prompt_style": "小さなタスク単位で指示＋必ず結果を報告",
+  "error_handling_policy": "エラー発生時は原因分析＋3つの解決案提示",
+  "data_protection": {
+    "strategy": "初期設計段階からバージョニングとバックアップ対応",
+    "implementation": "各サイトセクションのデータモデルにバックアップを組み込む",
+    "environment_sync": "開発環境と本番環境の同期手順の確立",
+    "migration_testing": "更新前の自動テスト実行"
+  },
+  "content_management": {
+    "versioning": "コンテンツの変更履歴管理",
+    "scheduling": "コンテンツの公開スケジュール機能",
+    "localization": "将来の多言語対応のための準備"
+  },
+  "marketing": {
+    "seo_strategy": "キーワード調査と最適化",
+    "analytics": "ユーザー行動の追跡と分析",
+    "ab_testing": "ランディングページのA/Bテスト計画"
+  },
+  "design": {
+    "style_guide": "一貫したブランドアイデンティティの維持",
+    "responsive": "すべてのデバイスで最適な表示",
+    "accessibility": "WAI-ARIAに準拠したアクセシビリティ対応"
+  }
+}

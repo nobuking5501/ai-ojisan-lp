@@ -1,0 +1,24 @@
+このディレクトリには以下の画像ファイルを追加してください：
+
+1. logo.png - プロジェクトロゴ（推奨サイズ: 200x200px）
+2. hero-bg.jpg - ヒーローセクションの背景画像（推奨サイズ: 1920x1080px）
+3. story-bg.jpg - ストーリーセクションの背景画像（推奨サイズ: 1920x1080px）
+4. story-image1.jpg - ストーリーセクション用の画像（推奨サイズ: 600x400px）
+5. guinness-challenge.jpg - ギネス挑戦セクション用の画像（推奨サイズ: 800x600px）
+6. app1-preview.jpg - キャラクター設定・世界観構築アプリのプレビュー画像（推奨サイズ: 800x450px）
+7. app2-preview.jpg - 記事生成アプリのプレビュー画像（推奨サイズ: 800x450px）
+8. app3-preview.jpg - SNS投稿文生成アプリのプレビュー画像（推奨サイズ: 800x450px）
+9. app4-preview.jpg - ランディングページ生成アプリのプレビュー画像（推奨サイズ: 800x450px）
+10. og-image.jpg - OGP用の画像（推奨サイズ: 1200x630px）
+
+適切な画像を準備するまでは、以下のようなプレースホルダー画像サービスのURLを一時的に使用することもできます：
+
+```jsx
+// 例: Image コンポーネントでのプレースホルダー使用
+<Image 
+  src="https://placehold.jp/3d4070/ffffff/800x450.png?text=AI-ojisan-App-Preview" 
+  alt="アプリプレビュー" 
+  width={800}
+  height={450}
+/>
+```
